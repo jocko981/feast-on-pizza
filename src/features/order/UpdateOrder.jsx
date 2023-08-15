@@ -17,7 +17,7 @@ export default UpdateOrder;
 export async function action({ request, params }) {
   const data = { priority: true };
 
-  if (window.confirm("Remove this item from cart?"))
+  if (window.confirm("Make this Priority order?"))
     await updateOrder(params.orderId, data);
 
   console.log(params.orderId);
